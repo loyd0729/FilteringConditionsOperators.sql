@@ -67,3 +67,12 @@ select * from EMP
 where JOB like 'S%'
 and (COMM = 300 or COMM > 1000)
 or COMM = 0
+
+/*return empty COMM column*/
+select * from EMP
+where COMM is null;
+
+/*return non empty COMM column*/
+select * from EMP
+where COMM is not null;
+
